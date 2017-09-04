@@ -17,3 +17,17 @@ Verify the deployment by navigating to your server address in your preferred bro
 ```sh
 127.0.0.1:8000
 ```
+
+#### Public
+
+To access the files by reference. Place the files in the folder
+
+```sh
+public/{file name}
+```
+
+The file will be accessible by reference
+
+```sh
+http://127.0.0.1:8000/content/{file name}
+```
