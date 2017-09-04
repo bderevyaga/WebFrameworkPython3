@@ -1,1 +1,2 @@
 from controllers.HomeController import HomeController
+from controllers.ContentController import ContentController

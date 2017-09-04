@@ -1,12 +1,13 @@
 from http.server import BaseHTTPRequestHandler
 from route import Router
-from controllers import HomeController
+from controllers import HomeController, ContentController
 
 
 class RequestHandler(BaseHTTPRequestHandler):
     def __init__(self, request, client_address, server):
         routes = [
-            {'regexp': r'^/$', 'controller': HomeController, 'action': 'indexAction'}
+            {'regexp': r'^/$', 'controller': HomeController, 'action': 'indexAction'},
+            {'regexp': r'^/content/', 'controller': ContentController, 'action': 'showAction'}
         ]
 
         self.__router = Router(self)
