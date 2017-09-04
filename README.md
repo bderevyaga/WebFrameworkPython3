@@ -9,7 +9,7 @@ WEB-Server requires [Python](https://www.python.org/) v3+ to run.
 Open your favorite Terminal and run these commands.
 
 ```sh
-$ python3 main.py
+$ python3 server.py
 ```
 
 Verify the deployment by navigating to your server address in your preferred browser.
