@@ -9,6 +9,7 @@ WEB-Server requires [Python](https://www.python.org/) v3+ to run.
 Open your favorite Terminal and run these commands.
 
 ```sh
+$ pip3 install -r requirements.txt
 $ python3 server.py
 ```
 
