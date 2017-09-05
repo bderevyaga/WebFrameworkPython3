@@ -9,4 +9,6 @@ class HomeController(Controller):
         self.server.send_response(200)
         self.server.send_header('Content-type', 'text/html')
         self.server.end_headers()
-        self.server.wfile.write(b'Home!!!!')
+        self.server.wfile.write(self.render('index.html', {
+            'name': 'User'
+        }))
