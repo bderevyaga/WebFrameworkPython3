@@ -1,7 +1,7 @@
 from http.server import HTTPServer
 from RequestHandler import RequestHandler
 
-PORT = 8000
+PORT = 8082
 SERVER = '127.0.0.1'
 
 
