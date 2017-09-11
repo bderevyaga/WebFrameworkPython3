@@ -11,9 +11,9 @@ def main():
     try:
         print('Server started http://%s:%s' % (SERVER, PORT))
         httpd.serve_forever()
-    except ZeroDivisionError:
+    except KeyboardInterrupt:
         print('Server shutting down')
         httpd.socket.close()
 
-
-main()
+if __name__ == '__main__':
+    main()
